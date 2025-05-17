@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITB - Microsoft Login</title>
+  <style>
+    body {
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+    .fake-browser {
+      width: 500px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      z-index: 20;
+    }
+    .browser-header {
+      background: #e1e1e1;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .browser-header .buttons {
+      display: flex;
+      gap: 6px;
+    }
+    .browser-header .buttons div {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .close { background: #ff5f57; }
+    .minimize { background: #ffbd2e; }
+    .maximize { background: #28c940; }
+
+    .browser-header .url-bar {
+      flex: 1;
+      margin: 0 12px;
+      padding: 4px 8px;
+      background: white;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #0078d7;
+    }
+
+    .login-window {
+      padding: 30px;
+    }
+    .login-window h2 {
+      font-weight: 400;
+      font-size: 24px;
+    }
+    .login-window input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .login-window button {
+      width: 100%;
+      padding: 10px;
+      background: #0078d7;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-window .notice {
+      font-size: 12px;
+      color: #888;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="fake-browser">
+      <div class="browser-header">
+        <div class="buttons">
+          <div class="close"></div>
+          <div class="minimize"></div>
+          <div class="maximize"></div>
+        </div>
+        <div class="url-bar">login.microsoftonline.com</div>
+        <div style="width: 30px;"></div>
+      </div>
+      <div class="login-window">
+        <h2>Sign in</h2>
+        <form onsubmit="alert('Captured! (For demo purposes only)'); return false;">
+          <input type="text" placeholder="Email, phone, or Skype" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Sign in</button>
+        </form>
+        <div class="notice">This is a simulated login window. Do not enter real credentials.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

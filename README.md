@@ -33,18 +33,6 @@ This project is for **educational and awareness purposes only**. It should never
 
 ---
 
-## 🔧 Customization
-
-Open `index.html` and replace the following placeholders:
-
-- `XX-TITLE-XX` → Page title (e.g., "Sign in")
-- `XX-DOMAIN-XX` → Fake domain (e.g., `login.microsoftonline.com`)
-- `XX-FORM-ACTION-XX` → Action for phishing form (e.g., dummy or logging endpoint)
-
-You can also replace the logo image (`logo.svg`) to match the targeted brand for training.
-
----
-
 ## 🛡️ Security Awareness
 
 This demo can be used for:

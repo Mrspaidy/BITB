@@ -9,7 +9,7 @@ This project is for **educational and awareness purposes only**. It should never
 
 ## 📸 Screenshot
 
-![BITB Demo Screenshot]()
+![BITB Demo Screenshot](Demo.png)
 
 ---
 

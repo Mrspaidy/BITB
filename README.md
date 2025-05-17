@@ -1,6 +1,6 @@
 # Browser in the Browser (BITB) - Demo
 
-This project demonstrates a **Browser-in-the-Browser (BITB)** phishing technique, originally documented by [mrd0x](https://github.com/mrd0x/BITB). It showcases how a fake browser pop-up login can be simulated inside a web page using HTML, CSS, and JavaScript.
+This project demonstrates a **Browser-in-the-Browser (BITB)** phishing technique, originally documented by Spaidy. It showcases how a fake browser pop-up login can be simulated inside a web page using HTML, CSS, and JavaScript.
 
 ⚠️ **Disclaimer**:  
 This project is for **educational and awareness purposes only**. It should never be used in real-world phishing attacks or to harm users. The purpose is to raise awareness about modern phishing techniques and encourage better defensive practices.
@@ -9,7 +9,7 @@ This project is for **educational and awareness purposes only**. It should never
 
 ## 📸 Screenshot
 
-![BITB Demo Screenshot](screenshot.png)
+![BITB Demo Screenshot]()
 
 ---
 
